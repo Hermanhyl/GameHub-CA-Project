@@ -1,0 +1,264 @@
+html, body {
+    min-height: 100%;
+}
+
+/* #container {
+    min-height: 100%;
+} */
+
+/* #main {
+    overflow: auto;
+    padding-bottom: 100%;
+} */
+
+/* #footer {
+    background-color: #930000;
+    position: relative;
+    height: 100px;
+    margin-top: -100px;
+    clear: both;
+} */
+
+:root{
+    --blue: #7594FF;
+    --darkBlue: #1B203D;
+    --red: #D92222;
+    --mediumBlue: #364254;
+}
+
+/* Body and Header */
+
+body {
+    margin: 0px 50px 0px 50px;
+    background-image: url("/Images/Moosh_shapes_flying_sci-fi_sooming_colorfull_blue_background_li_268b92c1-b705-4663-a652-5eef33785b07.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(4px);
+}
+
+
+h1 {
+    font-family: 'Teko', 'Courier New', Courier, monospace;
+    color: var(--blue);
+    font-size: 50px;
+    text-align: center;
+    text-decoration: double;
+}
+
+h2 {
+    font-family: 'Exo', 'courier', 'monoscape';
+}
+
+h3 {
+    color: white;
+}
+
+li {
+    display: inline-block;
+    text-align: center;
+    align-content: center;
+}
+
+
+ul a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.active {
+    background-color: var(--blue);
+}
+
+main h2 {
+    color: rgb(225, 239, 255);
+}
+
+body p {
+    color: white
+}
+
+
+main div {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.header_container {
+    background-color: rgb(86, 90, 145);
+    padding: 1%;
+
+}
+
+.logo-game_hub img {
+    max-width: 200px;
+}
+
+.header-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 3;
+}
+
+.menu_container {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    -ms-flex-align: center;
+}
+
+.profile {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex: 0.5;
+}
+
+
+.cart {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex: 0.5;
+}
+
+
+div .profile svg {
+    height: 30px;
+    width: 40px;
+}
+
+div .cart svg {
+    height: 30px;
+    width: 40%px
+}
+
+
+@media screen and (max-width: 600px) and (orientation: portrait) {
+    body {
+        background-color: aqua;
+        font-size: 14px;
+        scale: 0.5;
+    }
+}
+
+/* Card information/Checkout */
+
+.h1-box h1 {
+    align-content: center;
+    justify-content: center;
+    margin-top: 100px;
+    color: var(--darkBlue);
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.info-container {
+    border-radius: 25px;
+    background-color: var(--darkBlue);
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    width: 500px;
+    gap: 20px;
+}
+
+.exp-cvc {
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.typebox {
+    width: 100%;
+    padding: 10px;
+    height: 50px;
+    font-size: large;
+    box-sizing: border-box;
+    color: var(--white);
+    border: none;
+    background-color: white;
+    outline: 2px solid var(--blue);
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.btn-container {
+    min-width: 50%;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.btn-box a {
+    border-radius: 25px;
+    background-color: #7594FF;
+    display: flex;
+    color: white;
+    padding: 15px 30px;
+    margin: 0%;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+/* Footer */
+
+footer {
+    color: white;
+    background-color: rgb(22, 13, 46);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer_container {
+    display: flex;
+    flex: 1;
+    text-align: center;
+    align-items: center;
+
+}
+
+.footer_item {
+    justify-content: center;
+    flex: 1;
+    font-size: large;
+}
+
+.footer_item SVG {
+    color: white;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 30px;
+    height: 50px;
+    cursor: pointer;
+    margin: 1% 5% 1% 5%;
+}
+
+.footer_item li {
+    color: white;
+    text-decoration: none;
+}
+
+.footer_item ul {
+    z-index: 2;
+    padding: 0%;
+    margin: 0%;
+}

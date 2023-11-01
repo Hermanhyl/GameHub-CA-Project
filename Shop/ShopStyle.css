@@ -1,0 +1,387 @@
+html, body {
+    min-height: 100%;
+}
+
+/* #container {
+    min-height: 100%;
+} */
+
+/* #main {
+    overflow: auto;
+    padding-bottom: 100%;
+} */
+
+/* #footer {
+    background-color: #930000;
+    position: relative;
+    height: 100px;
+    margin-top: -100px;
+    clear: both;
+} */
+
+:root{
+    --blue: #7594FF;
+    --darkBlue: #1B203D;
+    --red: #D92222;
+    --mediumBlue: #364254;
+}
+
+body {
+    margin: 0px 50px 0px 50px;
+    background-image: url("/Images/Moosh_shapes_flying_sci-fi_sooming_colorfull_blue_background_li_268b92c1-b705-4663-a652-5eef33785b07.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(4px);
+}
+
+
+h1 {
+    font-family: 'Teko', 'Courier New', Courier, monospace;
+    color: var(--blue);
+    font-size: 50px;
+    text-align: center;
+    text-decoration: double;
+}
+
+h2 {
+    font-family: 'Exo', 'courier', 'monoscape';
+    text-align: left;
+    color: white;
+}
+
+h3 {
+    color: white;
+}
+
+li {
+    display: inline-block;
+    text-align: center;
+    align-content: center;
+}
+
+
+ul a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.active {
+    background-color: var(--blue);
+}
+
+/* footer::before, footer::after {
+    content: '/'; 
+    color: #930000;
+    font-size: 30px;
+    font-weight: bold;
+    margin: auto;
+    padding: 0%;
+    text-align: center;
+} */
+
+/* form, fieldset {
+    padding: 0%;
+    margin: 0%;
+}
+
+.form__input {
+    display: block; 
+}
+
+fieldset label {
+    color: white;
+}
+
+fieldset legend {
+    color: white;
+} */
+
+main h2 {
+    color: rgb(225, 239, 255);
+}
+
+body p {
+    color: white
+}
+
+
+main div {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.logo-game_hub img {
+    max-width: 200px;
+}
+
+.header-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 3;
+}
+
+.menu_container {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    -ms-flex-align: center;
+}
+
+.profile {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex: 0.5;
+}
+
+
+.cart {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex: 0.5;
+}
+
+
+div .profile svg {
+    height: 30px;
+    width: 40px;
+}
+
+div .cart svg {
+    height: 30px;
+    width: 40%px
+}
+
+/* Hero section */
+
+.hero-container {
+    background-color: #3642549d;
+    padding: 20px;
+}
+
+.hero-section {
+    padding: 10px;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2%;
+}
+
+.grid_item {
+    margin-top: auto;
+}
+
+.grid_item h2 {
+    text-align: center;
+    padding: 20px;
+}
+
+.grid_item a{
+    color: white;
+    text-decoration: none;
+    background-color: var(--red);
+    font-size: 140%;
+}
+
+.hero-section h1 {
+    color: var(--darkBlue);
+}
+
+/* Red button top */
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.red-button {
+    background-color: #ff0000; /* Red background */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px; /* Adjust margin between buttons */
+    cursor: pointer;
+}
+
+.red-button:last-child {
+    margin-right: 0; /* Remove margin from the last button */
+}
+
+.red-button:hover {
+    background-color: #cc0000; /* Darker red on hover */
+}
+
+/* Dropdown menus */
+
+.dropdown-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.dropdown {
+    margin: 0 10px;
+    flex: 1;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Styling for Dropdown Colors */
+
+#consoles {
+    background-color: var(--blue); 
+}
+
+#genres {
+    background-color: var(--blue); 
+}
+
+#others {
+    background-color: var(--blue); 
+}
+
+.header_container {
+    background-color: rgb(86, 90, 145);
+    padding: 1%;
+
+}
+
+/* Games List */
+
+.Popular_list {
+    margin-top: 100px;
+}
+
+.popular_games_container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.popular_games h2{
+    font-size: '16px';
+}
+
+.popular_games img{
+    width: 10rem;
+    height: 12rem;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.popular_games img:hover {
+    transition: 0.1s;
+    transform: scale(1.1);
+}
+
+.popular_games {
+    flex: 1;
+}
+
+
+@media screen and (max-width: 600px) and (orientation: portrait) {
+    body {
+        background-color: aqua;
+        font-size: 14px;
+        scale: 0.5;
+    }
+    .GameNews_container {
+        background-color: black;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 5%; 
+        justify-content: center;
+        padding-bottom: 10%;
+    }
+}
+
+.GameNews_container {
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5%; 
+    justify-content: center;
+    padding-bottom: 10%;
+}
+
+.GameNews img {
+    width: 150px;
+    height: 200px;
+    cursor: pointer;
+    transition: transform 0.is;
+}
+
+.GameNews img:hover {
+    transform: scale(1.1);
+}
+
+.GameNews {
+    background-color: blueviolet;
+}
+
+footer {
+    color: white;
+    background-color: rgb(22, 13, 46);
+    height: 60px;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer_container {
+    display: flex;
+    flex: 1;
+    text-align: center;
+    align-items: center;
+
+}
+
+.footer_item {
+    justify-content: center;
+    flex: 1;
+    font-size: large;
+}
+
+.footer_item SVG {
+    color: white;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 30px;
+    height: 50px;
+    cursor: pointer;
+    margin: 1% 5% 1% 5%;
+}
+
+.footer_item li {
+    color: white;
+    text-decoration: none;
+}
+
+.footer_item ul {
+    z-index: 2;
+    padding: 0%;
+    margin: 0%;
+}
