@@ -161,7 +161,7 @@ div .cart svg {
     width: 40%px
 }
 
-/* Info Games */
+/* Info Games left */
 
 .main-container {
     display: grid;
@@ -187,10 +187,39 @@ div .cart svg {
     height: 60%;
 }
 
+/* Info Games Right */
+
+.info-img-right {
+    max-width: 100%;
+    text-align: center;
+}
+
+.info-img-right img {
+    height: 50%;
+    width: 100%;
+}
+
+.Game-bio-container {
+    color: white;
+}
+
+.bio {
+    margin: 0px 30px;
+}
+
+.bio p { 
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px
+}
+
+/* Add to cart */
+
 .add-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin: 10px 50px;
+    margin: 15px 50px;
     gap: 20px
 }
 
@@ -199,7 +228,7 @@ div .cart svg {
     text-align: center;
 }
 
-/* Button test */
+
 
 .price-button {
     display: inline-block;
@@ -212,6 +241,11 @@ div .cart svg {
     text-align: center;
     position: relative;
     overflow: hidden;
+}
+
+.price-button a {
+    text-decoration: none;
+    color: white;
 }
 
 .price {
@@ -234,6 +268,16 @@ div .cart svg {
 
 .separator {
     border-top: 3px solid white;
+    margin: 20px 80px;
+}
+
+.separator-img {
+    border-top: 3px solid white;
+}
+
+.separator-bio {
+    border-top: 3px solid white;
+    margin: 20px 30px;
 }
 
 @media screen and (max-width: 600px) and (orientation: portrait) {
