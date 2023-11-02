@@ -2,23 +2,6 @@ html, body {
     min-height: 100%;
 }
 
-/* #container {
-    min-height: 100%;
-} */
-
-/* #main {
-    overflow: auto;
-    padding-bottom: 100%;
-} */
-
-/* #footer {
-    background-color: #930000;
-    position: relative;
-    height: 100px;
-    margin-top: -100px;
-    clear: both;
-} */
-
 :root{
     --blue: #7594FF;
     --darkBlue: #1B203D;
@@ -37,7 +20,7 @@ body {
 
 h1 {
     font-family: 'Teko', 'Courier New', Courier, monospace;
-    color: var(--blue);
+    color: white;
     font-size: 50px;
     text-align: center;
     text-decoration: double;
@@ -78,33 +61,6 @@ nav a {
 .active {
     background-color: var(--blue);
 }
-
-/* footer::before, footer::after {
-    content: '/'; 
-    color: #930000;
-    font-size: 30px;
-    font-weight: bold;
-    margin: auto;
-    padding: 0%;
-    text-align: center;
-} */
-
-/* form, fieldset {
-    padding: 0%;
-    margin: 0%;
-}
-
-.form__input {
-    display: block; 
-}
-
-fieldset label {
-    color: white;
-}
-
-fieldset legend {
-    color: white;
-} */
 
 main h2 {
     color: rgb(225, 239, 255);
@@ -175,6 +131,10 @@ div .cart svg {
     padding: 10px;
 }
 
+.hero-section h1 {
+    color: white;
+}
+
 .grid_container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -195,10 +155,6 @@ div .cart svg {
     text-decoration: none;
     background-color: var(--red);
     font-size: 140%;
-}
-
-.hero-section h1 {
-    color: var(--darkBlue);
 }
 
 /* Red button top */
