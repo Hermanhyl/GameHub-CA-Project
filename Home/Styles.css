@@ -3,23 +3,6 @@ html, body {
     min-height: 100%;
 }
 
-/* #container {
-    min-height: 100%;
-} */
-
-/* #main {
-    overflow: auto;
-    padding-bottom: 100%;
-} */
-
-/* #footer {
-    background-color: #930000;
-    position: relative;
-    height: 100px;
-    margin-top: -100px;
-    clear: both;
-} */
-
 :root{
     --blue: #7594FF;
     --darkBlue: #1B203D;
@@ -82,33 +65,6 @@ nav a {
 .active {
     background-color: var(--blue);
 }
-
-/* footer::before, footer::after {
-    content: '/'; 
-    color: #930000;
-    font-size: 30px;
-    font-weight: bold;
-    margin: auto;
-    padding: 0%;
-    text-align: center;
-} */
-
-/* form, fieldset {
-    padding: 0%;
-    margin: 0%;
-}
-
-.form__input {
-    display: block; 
-}
-
-fieldset label {
-    color: white;
-}
-
-fieldset legend {
-    color: white;
-} */
 
 main h2 {
     color: rgb(225, 239, 255);
@@ -202,21 +158,21 @@ div .cart svg {
 }
 
 .red-button {
-    background-color: #ff0000; /* Red background */
+    background-color: #ff0000; 
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    margin-right: 10px; /* Adjust margin between buttons */
+    margin-right: 10px; 
     cursor: pointer;
 }
 
 .red-button:last-child {
-    margin-right: 0; /* Remove margin from the last button */
+    margin-right: 0; 
 }
 
 .red-button:hover {
-    background-color: #cc0000; /* Darker red on hover */
+    background-color: #cc0000; 
 }
 
 /* Popular games list */
