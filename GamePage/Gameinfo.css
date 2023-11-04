@@ -79,33 +79,6 @@ nav a {
     background-color: var(--blue);
 }
 
-/* footer::before, footer::after {
-    content: '/'; 
-    color: #930000;
-    font-size: 30px;
-    font-weight: bold;
-    margin: auto;
-    padding: 0%;
-    text-align: center;
-} */
-
-/* form, fieldset {
-    padding: 0%;
-    margin: 0%;
-}
-
-.form__input {
-    display: block; 
-}
-
-fieldset label {
-    color: white;
-}
-
-fieldset legend {
-    color: white;
-} */
-
 main h2 {
     color: rgb(225, 239, 255);
 }
@@ -170,7 +143,7 @@ div .cart svg {
     min-width: 100%;
     align-content: center;
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
 }
 
 .info-box {
@@ -241,7 +214,7 @@ div .cart svg {
 .add-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin: 15px 50px;
+    margin: 30px 50px;
     gap: 20px
 }
 
@@ -252,11 +225,11 @@ div .cart svg {
 
 .price-button {
     display: inline-block;
-    background-color: #2ecc71; /* Green background color */
+    background-color: #2ecc71;
     color: white;
     padding: 10px 15px;
-    border: 2px solid black; /* Black border */
-    border-radius: 5px; /* Rounded corners */
+    border: 2px solid black;
+    border-radius: 5px;
     font-size: 16px;
     text-align: center;
     position: relative;
@@ -270,17 +243,17 @@ div .cart svg {
 
 .price {
     position: absolute;
-    left: 2px; /* Adjust the distance of the price from the button */
+    left: 2px;
     top: 50%;
     transform: translateY(-50%);
-    background-color: black; /* Black block background for price */
+    background-color: black; 
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 14px;
 }
 
 .price-button:hover {
-    background-color: #27ae60; /* Darker green on hover */
+    background-color: #27ae60; 
     cursor: pointer;
 }
 
@@ -306,6 +279,36 @@ div .cart svg {
         font-size: 14px;
         scale: 0.5;
     }
+}
+
+/* Back and Cart Button */
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+    justify-content: center;
+    gap: 84%;
+}
+
+
+.custom-button {
+    padding: 20px 40px;
+    background-color: var(--blue);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.custom-button:hover {
+    background-color: var(--darkBlue);
 }
 
 /* Footer */
