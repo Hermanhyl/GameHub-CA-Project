@@ -2,8 +2,6 @@ html, body {
     min-height: 100%;
 }
 
-
-
 :root{
     --blue: #7594FF;
     --darkBlue: #1B203D;
@@ -14,10 +12,11 @@ html, body {
 /* Body and Header */
 
 body {
-    margin: 0px 50px 0px 50px;
     background-image: url("/Images/Moosh_shapes_flying_sci-fi_sooming_colorfull_blue_background_li_268b92c1-b705-4663-a652-5eef33785b07.png");
     background-repeat: no-repeat;
     background-size: cover;
+    object-fit: cover;
+    object-position: center;
     backdrop-filter: blur(4px);
 }
 
@@ -81,6 +80,7 @@ main div {
 .header_container {
     background-color: rgb(86, 90, 145);
     padding: 1%;
+    min-width: 100%;
 
 }
 
