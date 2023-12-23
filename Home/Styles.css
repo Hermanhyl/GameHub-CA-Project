@@ -77,7 +77,6 @@ main {
 
 main div {
     text-align: center;
-    margin-top: 10px;
 }
 
 .header_container {
@@ -271,7 +270,6 @@ div .cart i {
 
 .GameNews {
     background-color: var(--mediumBlue);
-
 }
 
 .text-box {
