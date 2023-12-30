@@ -27,6 +27,9 @@
     width: 70%;
     height: 250px;
 }
+.info-img-right {
+    height: 350px;
+}
 
 .info-img-right img {
     object-fit: cover;
