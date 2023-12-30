@@ -1,19 +1,11 @@
-
-
-@media screen and (max-width: 600px) and (orientation: portrait) {
-    body {
-        background-color: aqua;
-        font-size: 14px;
-        scale: 0.5;
-    }
-}
-
 /* <!--// Checkout //--> */
 
 .checkout-section {
     background-color: #1B203D;
     border-radius: 25px;
-    margin: 100px 400px;
+    margin-left:  10%;
+    margin-right: 10%;
+    margin-top: 10%;
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -29,7 +21,9 @@
 }
 
 .item-details img {
-    width: 200px;
+    border-radius: 20px;
+    min-width: 100px;
+    width: 60%;
     height: auto;
     margin-bottom: 10px;
 }
@@ -58,19 +52,18 @@
 /* Card information/Checkout */
 
 .h1-box h1 {
-    align-content: center;
     justify-content: center;
     margin-top: 100px;
     color: white;
 }
 
-.main-container {
+.payment-container {
     display: flex;
     justify-content: center;
     margin-top: 100px;
 }
 
-.info-container {
+.payment-info-container {
     border-radius: 25px;
     background-color: var(--darkBlue);
     display: flex;
@@ -101,16 +94,16 @@
     justify-content: center;
 }
 
-.btn-container {
+.pay-btn-container {
     min-width: 50%;
-    margin: 20px;
-    margin-bottom: 100px;
+    margin: 0px 20px;
+    padding: 100px;
     display: flex;
     justify-content: center;
     color: white;
 }
 
-.btn-box a {
+.pay-btn-box a {
     border-radius: 25px;
     background-color: #7594FF;
     display: flex;

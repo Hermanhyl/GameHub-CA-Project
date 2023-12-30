@@ -43,24 +43,14 @@ li {
     align-content: center;
 }
 
-
 ul a {
     color: white;
     text-decoration: none;
     padding: 10px;
 }
 
-nav a:hover {
-    text-decoration: underline;
-}
-
-nav a {
-    font-size: 1.5rem;
-    font-weight: 400;
-}
-
 .active {
-    background-color: var(--blue);
+    background-color: var(--darkBlue);
 }
 
 main h2 {
@@ -79,15 +69,32 @@ main div {
     text-align: center;
 }
 
-.header_container {
-    background-color: rgb(86, 90, 145);
-    padding: 1%;
+header {
+    position: relative;
+    color: white;
+    font-size: 1.5rem;
+    background: var(--blue);
+}
+
+.hamburger-icon {
+    padding-left: 20px;
+}
+
+nav {
+    position: absolute;
+    left: 1.5rem;
+    font-size: 16px;
+    margin: 0% 5%;
+    background: var(--blue);
+}
+
+ul {
+    list-style: none;
 }
 
 nav, 
 #menu-checkbox {
     display: none;
-
 }
 
 #menu-checkbox:checked ~ nav {
@@ -99,42 +106,16 @@ nav,
     height: 100px;
 }
 
-.header-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 3;
+nav a {
+    display: block;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    text-decoration: none;
 }
 
-.menu_container {
-    display: flex;
-    justify-content: center;
-    flex: 1;
-    -ms-flex-align: center;
-}
-
-.profile {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex: 0.5;
-}
-
-.cart {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex: 0.5;
-}
-
-div .profile i {
-    height: 30px;
-    width: 40px;
-}
-
-div .cart i {
-    height: 30px;
-    width: 40%px
+nav li a:hover {
+    color: var(--darkBlue);
 }
 
 /* Hero section */
@@ -232,6 +213,46 @@ div .cart i {
         background-color: aqua;
         font-size: 14px;
     }
+
+    .header-container {
+        padding: 1%;
+    }
+
+    .logo-T-Rex img {
+        max-width: 120px;
+    }
+
+    .menu-container {
+        padding: 10px;
+    }
+
+    .header-list {
+        gap: 15px;
+    }
+
+    .menu-container ul {
+        gap: 15px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .cta {
+    margin: 0px 20px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    }
+    
+    .hamburger-icon {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .fa-solid {
+        margin-top: 15px;
+        margin-bottom: 15px; 
+        
+    }
+    
     .GameNews_container {
         background-color: black;
         display: grid;
@@ -245,6 +266,17 @@ div .cart i {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         grid-gap: 2%;
     }
+
+    .employe-info img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 50%;
+        width: 80%;
+        height: 40%;
+        min-width: 5%;
+        min-height: 5%;
+    }
+
 }
 
 /* Game news */
@@ -270,6 +302,7 @@ div .cart i {
 
 .GameNews {
     background-color: var(--mediumBlue);
+
 }
 
 .text-box {
@@ -281,23 +314,32 @@ div .cart i {
 
 footer {
     color: white;
-    background-color: rgb(22, 13, 46);
-    bottom: 0%;
+    background-color: var(--darkBlue);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .footer_container {
     display: flex;
-    flex: 1;
+    flex-flow:row wrap;
+    gap: 10px;
     text-align: center;
     align-items: center;
-    padding-top: 10px;
-    padding-bottom: 10px;;
+    justify-content: space-between;
+    padding: 15px 5%;
 }
 
 .footer_item {
-    justify-content: center;
     flex: 1;
     font-size: large;
+}
+
+.footer_item i {
+    color: white;
+    cursor: pointer;
+    width: 70px;
+    font-size: 32px;
 }
 
 .footer_item li {
@@ -305,7 +347,18 @@ footer {
     text-decoration: none;
 }
 
+.footer_item a {
+    font-style: none;
+    color: white;
+    font-size: 20px;
+}
+
 .footer_item ul {
-    z-index:2;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    flex-wrap: wrap;
     padding: 0%;
+    margin: 0%;
+    justify-content: space-evenly;
 }
