@@ -73,7 +73,7 @@ header {
     position: relative;
     color: white;
     font-size: 1.5rem;
-    background: var(--blue);
+    background: var(--mediumBlue);
 }
 
 .hamburger-icon {
