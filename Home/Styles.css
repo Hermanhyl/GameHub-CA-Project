@@ -277,6 +277,11 @@ nav li a:hover {
         min-height: 5%;
     }
 
+    .employe-info img {
+        max-width: 55%;
+        max-height: 35%;
+    }
+
 }
 
 /* Game news */
