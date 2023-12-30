@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This is a page working as an online game shop">
     <link rel="stylesheet" href="/Home/Styles.css">
-    <link rel="stylesheet" href="StyleCart.css">
+    <link rel="stylesheet" href="/Cart/StyleCart.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
     <title>Game Hub cart</title>
 </head>
@@ -23,7 +23,7 @@
             </a>
             <ul>
                 <li><a href="/index.html"> Home</a></li>
-                <li><a href="/Shop/Shop.html" class="active"> Shop</a></li>
+                <li><a href="/Shop/Shop.html"> Shop</a></li>
                 <li><a href="/About/About.html"> About</a></li>
             </ul>
             <div class="profile">
@@ -41,7 +41,7 @@
 
         <div class="checkout-section">
             <div class="item-details">
-                <img src="../Images/game info image/ajusted img.png" alt="Hell On Earth game">
+                <img src="/Images/game info image/ajusted_img.png" alt="Hell On Earth game">
                 <p class="item-price">Hell on Earth - $29.99</p>
                 <hr>
                 <div class="transport-type">
@@ -59,26 +59,26 @@
 
     <section class="payment-container">
         <div class="payment-info-container">
-            <form action="textinput">
+            <form action="Submit">
                 <label for="name"></label>
                 <input type="text" placeholder="Name" class="typebox">
             </form>
-            <form action="textinput" class="number">
+            <form action="submit" class="number">
                 <label for="number"></label>
-                <input type="text" placeholder="Number" class="typebox">
+                <input type="text" placeholder="number" class="typebox">
             </form>
             <div class="exp-cvc">
-                <form action="textinput-small-1">
+                <form action="submit">
                     <label for="month"></label>
-                    <input type="text" placeholder="Month" class="typebox">
+                    <input type="text" placeholder="month" class="typebox">
                 </form>
-                <form action="textinput-small-2">
+                <form action="submit">
                     <label for="year"></label>
-                    <input type="text" placeholder="Year" class="typebox">
+                    <input type="text" placeholder="year" class="typebox">
                 </form>
-                <form action="textinput-small-3">
+                <form action="submit">
                     <label for="cvc"></label>
-                    <input type="text" placeholder="CVC" class="typebox">
+                    <input type="text" placeholder="cvc" class="typebox">
                 </form>
             </div>
         </div>
