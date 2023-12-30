@@ -316,7 +316,6 @@ footer {
     color: white;
     background-color: var(--darkBlue);
     position: fixed;
-    bottom: 0;
     width: 100%;
 }
 
@@ -328,6 +327,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     padding: 15px 5%;
+    bottom: 0%;
 }
 
 .footer_item {
