@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Hub Sell</title>
     <meta name="description" content="Sell page">
     <link rel="stylesheet" href="../Home/Styles.css">
     <link rel="stylesheet" href="../SellGames/StyleSell.css">
@@ -41,11 +40,11 @@
                 <div class="game-info">
                     <div class="game-cover">
                         <label for="Game-Cover-Image-URL"></label>
-                        <input type="text" placeholder="Game Cover Image URL">
+                        <input type="text" placeholder="Game Cover Image URL" id="Game-Cover-Image-URL">
                     </div>
                     <div class="details">
                         <label for="game-title"></label>
-                        <input type="text" placeholder="Game Title">
+                        <input type="text" placeholder="Game Title" id="game-title">
                         <select>
                             <option value="" disabled selected>Select Age Limit</option>
                             <option value="3">Age 3</option>
@@ -68,10 +67,10 @@
                     </div>
                 </div>
                 <div class="sell-section">
-                    <a href="../ConfirmationSell/confirmationsell.html"><button class="sell-button">Sell the Game</button></a>
+                    <a href="../ConfirmationSell/confirmationsell.html" class="sell-button">Sell the Game</a>
                     <div class="checkout-box">
-                        <input type="checkbox" id="agree-terms">
                         <label for="agree-terms">I agree to the terms</label>
+                        <input type="checkbox" id="agree-terms">
                     </div>
                 </div>
             </div>
