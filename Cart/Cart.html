@@ -53,45 +53,43 @@
             </div>
         </div>
 
-    <div class="h1-box">
-        <h1>Insert payment info</h1>
-    </div>
 
-    <section class="payment-container">
-        <div class="h1-box">
-            <h1>Insert payment info</h1>
-        </div>
-        <div class="payment-info-container">
-            <form action="Submit">
-                <label for="name"></label>
-                <input type="text" placeholder="Name" class="typebox" id="name">
-            </form>
-            <form action="submit" class="number">
-                <label for="number"></label>
-                <input type="text" placeholder="number" class="typebox" id="number">
-            </form>
-            <div class="exp-cvc">
-                <form action="submit">
-                    <label for="month"></label>
-                    <input type="text" placeholder="month" class="typebox" id="month">
-                </form>
-                <form action="submit">
-                    <label for="year"></label>
-                    <input type="text" placeholder="year" class="typebox" id="year">
-                </form>
-                <form action="submit">
-                    <label for="cvc"></label>
-                    <input type="text" placeholder="cvc" class="typebox" id="cvc">
-                </form>
+
+        <section class="payment-container">
+            <div class="h1-box">
+                <h1>Insert payment info</h1>
             </div>
-        </div>
-    </section>
-
-    <section class="pay-btn-container">
-        <div class="pay-btn-box">
-            <a href="../Checkoutsuccess/success.html">Pay</a>
-        </div>
-    </section>
+            <div class="payment-info-container">
+                <div class="payment-info-box">
+                    <form action="submit-payment.php" method="post">
+                        <label for="name" hidden="hidden">Name:</label>
+                        <input type="text" placeholder="Name" class="typebox" id="name" required>
+        
+                        <label for="number" hidden="hidden">Card Number:</label>
+                        <input type="text" placeholder="Card Number" class="typebox" id="number" required>
+        
+                        <div class="exp-cvc">
+                            <label for="month" hidden="hidden">Expiration Month:</label>
+                            <input type="text" placeholder="Month" class="typebox" id="month" required>
+        
+                            <label for="year" hidden="hidden">Expiration Year:</label>
+                            <input type="text" placeholder="Year" class="typebox" id="year" required>
+        
+                            <label for="cvc" hidden="hidden">CVC:</label>
+                            <input type="text" placeholder="CVC" class="typebox" id="cvc" required>
+                        </div>
+        
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        <section class="pay-btn-container">
+            <div class="pay-btn-box">
+                <a href="../Checkoutsuccess/success.html">Pay</a>
+            </div>
+        </section>
+        
 
     </main>
 

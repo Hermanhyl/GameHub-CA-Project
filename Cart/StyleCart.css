@@ -23,7 +23,7 @@
 .item-details img {
     border-radius: 20px;
     min-width: 100px;
-    width: 60%;
+    width: 40%;
     height: auto;
     margin-bottom: 10px;
 }
@@ -52,23 +52,32 @@
 /* Card information/Checkout */
 
 .h1-box h1 {
-    justify-content: center;
     margin-top: 100px;
     color: white;
 }
 
 .payment-container {
-    margin-top: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 .payment-info-container {
+    max-width: 100%;
     border-radius: 25px;
-    background-color: var(--darkBlue);
     display: flex;
     flex-direction: column;
-    padding: 50px;
+    padding: 2%px;
     width: 500px;
-    gap: 20px;
+    background-color: var(--darkBlue);
+    margin-bottom: 2%;
+}
+
+.payment-info-box {
+    margin: 5%;
 }
 
 .exp-cvc {
@@ -89,13 +98,14 @@
     background-color: white;
     outline: 2px solid var(--blue);
     border-radius: 10px;
-    justify-content: center;
+    margin-bottom: 20px
 }
 
 .pay-btn-container {
     min-width: 50%;
     margin: 0px 20px;
     padding: 5%;
+    padding-top: 0%;
     display: flex;
     justify-content: center;
     color: white;
