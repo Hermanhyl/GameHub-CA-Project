@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This is a page working as an online game shop">
     <link rel="stylesheet" href="../Home/Styles.css">
     <link rel="stylesheet" href="../Cart/StyleCart.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <script src="cart.js" async></script>
     <title>Game Hub cart</title>
 </head>
 
@@ -15,11 +17,11 @@
     <!--// Header //-->
 
     <header>
-        <input type="checkbox" id="menu-checkbox"/>
+        <input type="checkbox" id="menu-checkbox" />
         <label for="menu-checkbox" class="hamburger-icon"><i class="fa-solid fa-bars" aria-hidden="true"></i></label>
         <nav>
             <a class="logo-game_hub" href="../index.html">
-            <img src="../Images/GameHub_Logo.png" alt="The logo of the museum">
+                <img src="../Images/GameHub_Logo.png" alt="The logo of the museum">
             </a>
             <ul>
                 <li><a href="../index.html"> Home</a></li>
@@ -51,6 +53,7 @@
             <div class="total-sum">
                 <p>Total: $29.99</p>
             </div>
+            <button class="btn-danger" type="button">REMOVE</button>
         </div>
 
 
@@ -64,32 +67,32 @@
                     <form action="submit-payment.php" method="post">
                         <label for="name" hidden="hidden">Name:</label>
                         <input type="text" placeholder="Name" class="typebox" id="name" required>
-        
+
                         <label for="number" hidden="hidden">Card Number:</label>
                         <input type="text" placeholder="Card Number" class="typebox" id="number" required>
-        
+
                         <div class="exp-cvc">
                             <label for="month" hidden="hidden">Expiration Month:</label>
                             <input type="text" placeholder="Month" class="typebox" id="month" required>
-        
+
                             <label for="year" hidden="hidden">Expiration Year:</label>
                             <input type="text" placeholder="Year" class="typebox" id="year" required>
-        
+
                             <label for="cvc" hidden="hidden">CVC:</label>
                             <input type="text" placeholder="CVC" class="typebox" id="cvc" required>
                         </div>
-        
+
                     </form>
                 </div>
             </div>
         </section>
-        
+
         <section class="pay-btn-container">
             <div class="pay-btn-box">
                 <a href="../Checkoutsuccess/success.html">Pay</a>
             </div>
         </section>
-        
+
 
     </main>
 
