@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="../Home/Styles.css">
     <link rel="stylesheet" href="../Cart/StyleCart.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-    <script src="../JS/cart.js"></script>
+    <script type="module" src="../JS/cart.js"></script>
+
     <title>Game Hub cart</title>
 </head>
 
@@ -31,7 +32,7 @@
             <div class="profile">
                 <i class="fa-solid fa-user" style="color: #ffffff;"></i>
             </div>
-            <div class="cart">
+            <div class="cart-btn">
                 <a href="../Cart/Cart.html"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a>
             </div>
         </nav>
@@ -41,23 +42,46 @@
 
         <!--// Checkout //-->
 
+
+
         <div class="checkout-section">
-            <div class="cart-row">
-                <div class="item-details">
-                    <img src="../Images/game-info-image/ajusted_img.png" alt="Hell On Earth game">
-                    <p class="item-price">Hell on Earth - $29.99</p>
-                    <hr>
-                    <div class="transport-type">
-                        <p>Free Shipping - $0</p>
+            <div class="cart-items">
+                <!-- <div class="cart-items" id="display-cart" style="color: white;">
+
+
+                </div> -->
+                <div id="cart-items-display" style="color: #ffffff;"></div>
+
+                <div class="cart-row">
+                    <div class="cart-item">
+                        <img src="../Images/game-info-image/ajusted_img.png" alt="Hell On Earth game">
+                        <div class="transport-type">
+                            <p>Free Shipping - $0</p>
+                        </div>
+                    </div>
+                    <span class="cart-price"> $29.99</span>
+                    <div class="cart-quantity">
+                        <input class="cart-quantity-input" type="number" value="1" name="quantity">
+                        <button class="btn-danger" type="button">REMOVE</button>
                     </div>
                 </div>
-                <div class="total-sum">
-                    <p>Total: $29.99</p>
+                <div class="cart-row">
+                    <div class="cart-item">
+                        <img src="../Images/game-info-image/ajusted_img.png" alt="Hell On Earth game">
+                        <div class="transport-type">
+                            <p>Free Shipping - $0</p>
+                        </div>
+                    </div>
+                    <span class="cart-price"> $29.99</span>
+                    <div class="cart-quantity">
+                        <input class="cart-quantity-input" type="number" value="1" name="quantity">
+                        <button class="btn-danger" type="button">REMOVE</button>
+                    </div>
                 </div>
-                <div class="cart-quantity">
-                    <input class="cart-quantity-input" type="number" value="1" id="forQuantity">
-                    <button class="btn-danger" type="button">REMOVE</button>
-                </div>
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$59.99</span>
             </div>
         </div>
 
@@ -117,6 +141,9 @@
             </div>
         </div>
     </footer>
+
+    <script type="module" src="../JS/checkout.mjs"></script>
+
 
 </body>
 

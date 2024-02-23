@@ -1,76 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Game Hub game info</title>
-        <meta name="description" content="This is a page working as an online game shop">
-        <link rel="stylesheet" href="../Home/Styles.css">
-        <link rel="stylesheet" href="./Gameinfo.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
-        <title>Document</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Hub game info</title>
+    <meta name="description" content="This is a page working as an online game shop">
+    <link rel="stylesheet" href="../Home/Styles.css">
+    <link rel="stylesheet" href="./Gameinfo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <script defer src="../JS/game-info.js"></script>
+    <title>Document</title>
+</head>
 
-    <body>
+<body>
 
-        <header>
-            <input type="checkbox" id="menu-checkbox"/>
-            <label for="menu-checkbox" class="hamburger-icon"><i class="fa-solid fa-bars" aria-hidden="true"></i></label>
-            <nav>
-                <a class="logo-game_hub" href="../index.html">
+    <header>
+        <input type="checkbox" id="menu-checkbox" />
+        <label for="menu-checkbox" class="hamburger-icon"><i class="fa-solid fa-bars" aria-hidden="true"></i></label>
+        <nav>
+            <a class="logo-game_hub" href="../index.html">
                 <img src="../Images/GameHub_Logo.png" alt="Logo of game shop">
-                </a>
-                <ul>
-                    <li><a href="../index.html"> Home</a></li>
-                    <li><a href="../Shop/Shop.html"> Shop</a></li>
-                    <li><a href="../About/About.html"> About</a></li>
-                </ul>
-                <div class="profile">
-                    <i class="fa-solid fa-user" style="color: #ffffff;"></i>
-                </div>
-                <div class="cart">
-                    <a href="../Cart/Cart.html"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a>
-                </div>
-            </nav>
-        </header>
+            </a>
+            <ul>
+                <li><a href="../index.html"> Home</a></li>
+                <li><a href="../Shop/Shop.html"> Shop</a></li>
+                <li><a href="../About/About.html"> About</a></li>
+            </ul>
+            <div class="profile">
+                <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+            </div>
+            <div class="cart-btn">
+                <a href="../Cart/Cart.html"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a>
+            </div>
+        </nav>
+    </header>
 
-        <main>
-            <section class="game-info-section">
-                <div class="info-game_container">
-                    <div class="info-box">
-                        <div class="info-img-left">
-                            <img src="../Images/game-info-image/ajusted_img.png" alt="Hell on Earth game cover">
+    <main>
+
+
+
+        <!-- <section class="game-info-section">
+
+            <div class="info-wrapper">
+                <div class="info-container">
+                    <h3></h3>
+                    <div class="price-container">
+                        <div class="price"></div>
+                        <div class="discount-price"></div>
+                    </div>
+                    <div class="age"></div>
+                    <div class="genre"></div>
+                    <div class="release-date"></div>
+                </div>
+            </div> -->
+
+        <div id="display-game-info" style="color: #ffffff;"></div>
+
+        <!-- <div class="info-game_container">
+
+                <div class="info-box">
+                    <div class="info-img-left">
+                        <img src="../Images/game-info-image/ajusted_img.png" alt="Hell on Earth game cover">
+                    </div>
+                    <div class="seperator-container">
+                        <div class="separator-img"></div>
+                    </div>
+                    <div class="add-section">
+                        <button class="price-button">
+                            Add to Wishlist
+                        </button>
+                        <button class="price-button">
+                            <span class="price">$29.99</span>
+                            <a class="add-to-cart" href="../Cart/Cart.html">Add to Cart</a>
+                        </button>
+                    </div>
+                    <div class="seperator-container">
+                        <div class="separator"></div>
+                    </div>
+                    <div class="console-container">
+                        <div class="console-box">
+                            Playstation 4/5
                         </div>
-                        <div class="seperator-container">
-                            <div class="separator-img"></div>
+                        <div class="console-box">
+                            Xbox sceries X
                         </div>
-                        <div class="add-section">
-                            <button class="price-button">
-                                Add to Wishlist
-                            </button>
-                            <button class="price-button">
-                                <span class="price">$29.99</span>
-                                <a href="../Cart/Cart.html">Add to Cart</a>
-                            </button>
+                        <div class="console-box">
+                            Nintendo
                         </div>
-                        <div class="seperator-container">
-                            <div class="separator"></div>
+                        <div class="console-box">
+                            PC
                         </div>
-                        <div class="console-container">
-                            <div class="console-box">
-                                Playstation 4/5
-                            </div>
-                            <div class="console-box">
-                                Xbox sceries X
-                            </div>
-                            <div class="console-box">
-                                Nintendo
-                            </div>
-                            <div class="console-box">
-                                PC
-                            </div>
-                        </div>
+                    </div>
                 </div>
                 <div class="info-box">
                     <div class="info-img-right">
@@ -82,68 +103,71 @@
                     <div class="Game-bio-container">
                         <div class="bio">
                             <h3>Hell On Earth</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta alias veritatis accusantium excepturi assumenda itaque. </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta alias veritatis
+                                accusantium excepturi assumenda itaque. </p>
                         </div>
                         <div class="seperator-container">
                             <div class="separator-bio"></div>
                         </div>
                         <div class="general-info-container">
-                                <div class="general-info">
-                                    <div class="Developer">Game Developer</div>                                   
-                                </div>
-                                <div class="general-info">
-                                    <div class="Name">(Name of developer)</div>                                   
-                                </div>
-                                <div class="general-info">
-                                    <div class="Published">Published</div>                                   
-                                </div>
-                                <div class="general-info">
-                                    <div class="Date">(Date of when published)</div>
-                                </div>
-                                <div class="general-info">
-                                    <div class="Genre">Genre</div>
-                                </div>
-                                <div class="general-info">
-                                    <div class="Action">(Action)</div>
-                                </div>
+                            <div class="general-info">
+                                <div class="Developer">Game Developer</div>
+                            </div>
+                            <div class="general-info">
+                                <div class="Name">(Name of developer)</div>
+                            </div>
+                            <div class="general-info">
+                                <div class="Published">Published</div>
+                            </div>
+                            <div class="general-info">
+                                <div class="Date">(Date of when published)</div>
+                            </div>
+                            <div class="general-info">
+                                <div class="Genre">Genre</div>
+                            </div>
+                            <div class="general-info">
+                                <div class="Action">(Action)</div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </section>
+        </section> -->
 
 
-                <div class="back-cart-btn-container">
-                    <div class="btn-back">
-                        <a href="../Shop/Shop.html"><button class="custom-button">Back</button></a>
-                    </div>
-                    <div class="btn-Cart">
-                        <a href="../Cart/Cart.html"></a><button class="custom-button">Cart</button></a>
-                    </div>
-                </div>
-
-
-
-        </main>
-
-        <footer>
-            <div class="footer_container">
-                <div class="footer_item">
-                    <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
-                    <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
-                    <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
-                </div>
-                <div class="footer_item">
-                    Copyright &copy;
-                </div>
-                <div class="footer_item">
-                    <ul>
-                        <li><a href="/About/About.html"> About Us</a></li>
-                        <li><a href="#"> Contact us</a></li>
-                    </ul>
-                </div>
+        <div class="back-cart-btn-container">
+            <div class="btn-back">
+                <a href="../Shop/Shop.html"><button class="custom-button">Back</button></a>
             </div>
-        </footer>
+            <div class="btn-Cart">
+                <a href="../Cart/Cart.html"></a><button class="custom-button">Cart</button></a>
+            </div>
+        </div>
 
-    </body>
+
+
+    </main>
+
+    <footer>
+        <div class="footer_container">
+            <div class="footer_item">
+                <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+            </div>
+            <div class="footer_item">
+                Copyright &copy;
+            </div>
+            <div class="footer_item">
+                <ul>
+                    <li><a href="/About/About.html"> About Us</a></li>
+                    <li><a href="#"> Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
 
 </html>
