@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="This is a page working as an online game shop">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Shop/ShopStyle.css">
     <link rel="stylesheet" href="../Home/Styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <title>Game Hub shop</title>
 </head>
 
 <body>
-    
+
     <header>
-        <input type="checkbox" id="menu-checkbox"/>
+        <input type="checkbox" id="menu-checkbox" />
         <label for="menu-checkbox" class="hamburger-icon"><i class="fa-solid fa-bars" aria-hidden="true"></i></label>
         <nav>
             <a class="logo-game_hub" href="../index.html">
-            <img src="../Images/GameHub_Logo.png" alt="The logo of the museum">
+                <img src="../Images/GameHub_Logo.png" alt="The logo of the museum">
             </a>
             <ul>
                 <li><a href="../index.html"> Home</a></li>
@@ -27,7 +28,7 @@
             <div class="profile">
                 <i class="fa-solid fa-user" style="color: #ffffff;"></i>
             </div>
-            <div class="cart">
+            <div class="cart-btn">
                 <a href="../Cart/Cart.html"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a>
             </div>
         </nav>
@@ -37,157 +38,93 @@
 
     <main>
 
-            <div class="hero-container">
-                <section class="hero-section">
-                    <h1>Games for purchase</h1>
-                    <p>The perfect website for people looking to purchase and or sell games</p>
-                </section>
-                <div class="grid_item">
-                    <div class="button-container">
-                        <a href="../SellGames/Sell.html" class="red-button">Sell Games</a>
-                    </div>
+        <div class="hero-container">
+            <section class="hero-section">
+                <h1>Games for purchase</h1>
+                <p>The perfect website for people looking to purchase and or sell games</p>
+            </section>
+            <div class="grid_item">
+                <div class="button-container">
+                    <a href="../SellGames/Sell.html" class="red-button">Sell Games</a>
                 </div>
             </div>
+        </div>
 
-                <div class="dropdown-container">
-                    <div class="dropdown">
-                        <label for="consoles"></label>
-                        <select id="consoles">
-                            <option value="" disabled selected>Select Console</option>
-                            <option value="ps5">PlayStation 5</option>
-                            <option value="xbox_series_x">Xbox Series X</option>
-                            <option value="switch">Nintendo Switch</option>
-                            <option value="pc">PC</option>
-                        </select>
-                    </div>
-            
-                    <div class="dropdown">
-                        <label for="genres"></label>
-                        <select id="genres">
-                            <option value="" disabled selected>Select Genre</option>
-                            <option value="action">Action</option>
-                            <option value="adventure">Adventure</option>
-                            <option value="rpg">Role-Playing Game (RPG)</option>
-                            <option value="strategy">Strategy</option>
-                        </select>
-                    </div>
-            
-                    <div class="dropdown">
-                        <label for="others"></label>
-                        <select id="others">
-                            <option value="" disabled selected>Select Other</option>
-                            <option value="indie">Indie</option>
-                            <option value="multiplayer">Multiplayer</option>
-                            <option value="puzzle">Puzzle</option>
-                            <option value="simulation">Simulation</option>
-                        </select>
-                    </div>
-                </div>
 
-                <div class="list">
-                    <h2>Popular Games</h2>
+        <div class="dropdown">
+            <label for="genres"></label>
+            <select id="genres">
+                <option value="" disabled selected>Select Genre</option>
+                <option value="action">Action</option>
+                <option value="adventure">Adventure</option>
+                <option value="rpg">Role-Playing Game (RPG)</option>
+                <option value="strategy">Strategy</option>
+            </select>
+        </div>
+
+
+        <div class="products" id="games-display" style="color: #ffffff;">
+
+        </div>
+        <!-- <div class="games_container" style="color: white;">
+            <div class="shop-item">
+                <span class="shop-item-title">Lightning Fast</span>
+                <div class="games-detail">
+                    <a href="../GamePage/Gameinfo.html"><img class="shop-item-img"
+                            src="../Images/Moosh_Flight_simulator_game_cover_plane_fighter_jet_helicopter__2379d3cd-9573-476d-910d-b435d288e5d4.png"
+                            alt="Lightning Fast game cover"></a>
+                    <p>Flight Simulator</p>
+                    <span class="shop-item-price">$25.99</span>
+                    <button class="btn-shop-primary" type="button">ADD TO CART</button>
                 </div>
-                <div class="games_container">
-                    <div class="games">
-                        <a href="../GamePage/Gameinfo.html"><img src="../Images/Moosh_Flight_simulator_game_cover_plane_fighter_jet_helicopter__2379d3cd-9573-476d-910d-b435d288e5d4.png" alt="Lightning Fast game cover"></a>
-                        <h3>Lightning Fast</h3>
-                        <p>Flight Simulator</p>
-                    </div>
-                    <div class="games">
-                        <a href="../GamePage/Gameinfo.html"><img src="../Images/Moosh_game_covers_platform_games_blocks_pixels_colorful_happy_b7b5248d-2556-4fb8-afe4-860412b69561.png" alt="Happy Blocks game cover"></a>
-                        <h3>Happy Blocks</h3>
-                        <p>Platform Game</p>
-                    </div>
-                    <div class="games">
-                        <a href="../GamePage/Gameinfo.html"><img src="../Images/Moosh_game_covers_shooter_games_colorful_explotians_guns_helico_29735956-aeb8-43bb-b633-6208381c675b.png" alt="Hell On Earth game cover"></a>
-                        <h3>Hell On Earth</h3>
-                        <p>RPG Shooter Game</p>
-                    </div>
-                    <div class="games">
-                        <a href="../GamePage/Gameinfo.html"><img src="../Images/Moosh_race_car_game_cover_cover_game_sports_car_musle_car_hot_r_1c75769b-cddf-48ae-a56a-1467fec76d75.png"
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Happy Blocks</span>
+                <div class="games-detail">
+                    <a href="../GamePage/Gameinfo.html"><img class="shop-item-img"
+                            src="../Images/Moosh_game_covers_platform_games_blocks_pixels_colorful_happy_b7b5248d-2556-4fb8-afe4-860412b69561.png"
+                            alt="Happy Blocks game cover"></a>
+                    <p>Platform Game</p>
+                    <span class="shop-item-price">$29.99</span>
+                    <button class="btn-shop-primary" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Hell On Earth</span>
+                <div class="games-detail">
+                    <a href="../GamePage/Gameinfo.html"><img class="shop-item-img"
+                            src="../Images/Moosh_game_covers_shooter_games_colorful_explotians_guns_helico_29735956-aeb8-43bb-b633-6208381c675b.png"
+                            alt="Hell On Earth game cover"></a>
+                    <p>RPG Shooter Game</p>
+                    <span class="shop-item-price">35.99</span>
+                    <button class="btn-shop-primary" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Racers</span>
+                <div class="games-detail">
+                    <a href="../GamePage/Gameinfo.html"><img class="shop-item-img"
+                            src="../Images/Moosh_race_car_game_cover_cover_game_sports_car_musle_car_hot_r_1c75769b-cddf-48ae-a56a-1467fec76d75.png"
                             alt="Racers game cover"></a>
-                        <h3>Racers</h3>
-                        <p>Racing Game</p>
-                    </div>
-                    <div class="games">
-                        <a href="../GamePage/Gameinfo.html"><img src="../Images/Moosh_viking_game_cover_viking_ship_warrior_helmets_shields_riv_fde64b89-baa8-4692-a76a-3937a28dd11b.png"
+                    <p>Racing Game</p>
+                    <span class="shop-item-price">$29.99</span>
+                    <button class="btn-shop-primary" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Raider</span>
+                <div class="games-detail">
+                    <a href="../GamePage/Gameinfo.html"><img class="shop-item-img"
+                            src="../Images/Moosh_viking_game_cover_viking_ship_warrior_helmets_shields_riv_fde64b89-baa8-4692-a76a-3937a28dd11b.png"
                             alt="Raider game cover"></a>
-                        <h3>Raider</h3>
-                        <P>RPG Openworld Game</P>
-                    </div>
+                    <P>RPG Openworld Game</P>
+                    <span class="shop-item-price">$29.99</span>
+                    <button class="btn-shop-primary" type="button">ADD TO CART</button>
                 </div>
+            </div>
+        </div> -->
 
-                <div class="list">
-                    <h2>Action</h2>
-                </div>
-                <div class="games_container">
-                    <div class="games">
-                        <img src="../Images/Moosh_Flight_simulator_game_cover_plane_fighter_jet_helicopter__2379d3cd-9573-476d-910d-b435d288e5d4.png"
-                            alt="Lightning Fast game cover">
-                        <h3>Lightning Fast</h3>
-                        <p>Flight Simulator</p>
-                    </div>
-                    <div class="games">
-                        <img src="../Images/Moosh_game_covers_platform_games_blocks_pixels_colorful_happy_b7b5248d-2556-4fb8-afe4-860412b69561.png"
-                            alt="Happy blocks game cover">
-                        <h3>Happy Blocks</h3>
-                        <p>Platform Game</p>
-                    </div>
-                    <div class="games">
-                        <img src="../Images/Moosh_game_covers_shooter_games_colorful_explotians_guns_helico_29735956-aeb8-43bb-b633-6208381c675b.png"
-                            alt="Hell on Earth game cover">
-                        <h3>Hell On Earth</h3>
-                        <p>RPG Shooter Game</p>
-                    </div>
-                    <div class="games">
-                        <img src="../Images/Moosh_race_car_game_cover_cover_game_sports_car_musle_car_hot_r_1c75769b-cddf-48ae-a56a-1467fec76d75.png"
-                            alt="Racers game cover">
-                        <h3>Racers</h3>
-                        <p>Racing Game</p>
-                    </div>
-                    <div class="games">
-                        <img src="../Images/Moosh_viking_game_cover_viking_ship_warrior_helmets_shields_riv_fde64b89-baa8-4692-a76a-3937a28dd11b.png"
-                            alt="Raider game cover">
-                        <h3>Raider</h3>
-                        <P>RPG Openworld Game</P>
-                    </div>
-                </div>
 
-                <div class="list">
-                    <h2>RPG</h2>
-                </div>
-                <div class="games_container">
-                    <div class="games">
-                        <img src="../Images/Moosh_Flight_simulator_game_cover_plane_fighter_jet_helicopter__2379d3cd-9573-476d-910d-b435d288e5d4.png"
-                            alt="Lightning Fast game cover">
-                        <h3>Lightning Fast</h3>
-                        <p>Flight Simulator</p>
-                    </div>
-                    <div class="games">
-                        <img src="../Images/Moosh_game_covers_platform_games_blocks_pixels_colorful_happy_b7b5248d-2556-4fb8-afe4-860412b69561.png"
-                            alt="Happy Blocks game cover">
-                        <h3>Happy Blocks</h3>
-                        <p>Platform Game</p>
-                    </div>
-                    <div class="games">
-                        <img src="../Images/Moosh_game_covers_shooter_games_colorful_explotians_guns_helico_29735956-aeb8-43bb-b633-6208381c675b.png"
-                            alt="Hell On Earth game cover">
-                        <h3>Hell On Earth</h3>
-                        <p>RPG Shooter Game</p>
-                    </div>
-                    <div class="games">
-                        <img src="../Images/Moosh_race_car_game_cover_cover_game_sports_car_musle_car_hot_r_1c75769b-cddf-48ae-a56a-1467fec76d75.png"
-                            alt="Racers game cover">
-                        <h3>Racers</h3>
-                        <p>Racing Game</p>
-                    </div>
-                    <div class="games">
-                        <img src="../Images/Moosh_viking_game_cover_viking_ship_warrior_helmets_shields_riv_fde64b89-baa8-4692-a76a-3937a28dd11b.png"
-                            alt="Raider game cover">
-                        <h3>Raider</h3>
-                        <P>RPG Openworld Game</P>
-                    </div>
-                </div>
     </main>
 
     <footer>
@@ -208,6 +145,10 @@
             </div>
         </div>
     </footer>
+
+    <script src="../JS/products.js"></script>
+    <script src="../JS/cart.js"></script>
+    <script type="module" src="../JS/shop.js"></script>
 
 </body>
 

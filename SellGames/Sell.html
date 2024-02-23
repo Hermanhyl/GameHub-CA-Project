@@ -7,94 +7,95 @@
     <meta name="description" content="Sell page">
     <link rel="stylesheet" href="../Home/Styles.css">
     <link rel="stylesheet" href="../SellGames/StyleSell.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <title>Game Hub Sell</title>
 </head>
 
-    <body>
+<body>
 
-        <header>
-            <input type="checkbox" id="menu-checkbox"/>
-            <label for="menu-checkbox" class="hamburger-icon"><i class="fa-solid fa-bars" aria-hidden="true"></i></label>
-            <nav>
-                <a class="logo-game_hub" href="../index.html">
+    <header>
+        <input type="checkbox" id="menu-checkbox" />
+        <label for="menu-checkbox" class="hamburger-icon"><i class="fa-solid fa-bars" aria-hidden="true"></i></label>
+        <nav>
+            <a class="logo-game_hub" href="../index.html">
                 <img src="../Images/GameHub_Logo.png" alt="The logo of the museum">
-                </a>
+            </a>
+            <ul>
+                <li><a href="../index.html"> Home</a></li>
+                <li><a href="../Shop/Shop.html"> Shop</a></li>
+                <li><a href="../About/About.html"> About</a></li>
+            </ul>
+            <div class="profile">
+                <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+            </div>
+            <div class="cart-btn">
+                <a href="../Cart/Cart.html"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="game-sell-section">
+            <div class="game-info">
+                <div class="game-cover">
+                    <label for="Game-Cover-Image-URL"></label>
+                    <input type="text" placeholder="Game Cover Image URL" id="Game-Cover-Image-URL">
+                </div>
+                <div class="details">
+                    <label for="game-title"></label>
+                    <input type="text" placeholder="Game Title" id="game-title">
+                    <select>
+                        <option value="" disabled selected>Select Age Limit</option>
+                        <option value="3">Age 3</option>
+                        <option value="16">Age 16</option>
+                        <option value="18">Age 18</option>
+                    </select>
+                    <select>
+                        <option value="" disabled selected>Select Console</option>
+                        <option value="ps4">PlayStation 4</option>
+                        <option value="xbox">Xbox</option>
+                        <option value="switch">Nintendo Switch</option>
+                        <option value="pc">PC</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <select>
+                        <option value="" disabled selected>Select Condition</option>
+                        <option value="used">Used</option>
+                        <option value="new">New</option>
+                    </select>
+                </div>
+            </div>
+            <div class="sell-section">
+                <a href="../ConfirmationSell/confirmationsell.html" class="sell-button">Sell the Game</a>
+                <div class="checkout-box">
+                    <label for="agree-terms">I agree to the terms</label>
+                    <input type="checkbox" id="agree-terms">
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer_container">
+            <div class="footer_item">
+                <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+            </div>
+            <div class="footer_item">
+                Copyright &copy;
+            </div>
+            <div class="footer_item">
                 <ul>
-                    <li><a href="../index.html"> Home</a></li>
-                    <li><a href="../Shop/Shop.html"> Shop</a></li>
-                    <li><a href="../About/About.html"> About</a></li>
+                    <li><a href="../About/About.html"> About Us</a></li>
+                    <li><a href="#"> Contact us</a></li>
                 </ul>
-                <div class="profile">
-                    <i class="fa-solid fa-user" style="color: #ffffff;"></i>
-                </div>
-                <div class="cart">
-                    <a href="../Cart/Cart.html"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a>
-                </div>
-            </nav>
-        </header>
-
-        <main>
-
-            <div class="game-sell-section">
-                <div class="game-info">
-                    <div class="game-cover">
-                        <label for="Game-Cover-Image-URL"></label>
-                        <input type="text" placeholder="Game Cover Image URL" id="Game-Cover-Image-URL">
-                    </div>
-                    <div class="details">
-                        <label for="game-title"></label>
-                        <input type="text" placeholder="Game Title" id="game-title">
-                        <select>
-                            <option value="" disabled selected>Select Age Limit</option>
-                            <option value="3">Age 3</option>
-                            <option value="16">Age 16</option>
-                            <option value="18">Age 18</option>
-                        </select>
-                        <select>
-                            <option value="" disabled selected>Select Console</option>
-                            <option value="ps4">PlayStation 4</option>
-                            <option value="xbox">Xbox</option>
-                            <option value="switch">Nintendo Switch</option>
-                            <option value="pc">PC</option>
-                            <option value="other">Other</option>
-                        </select>
-                        <select>
-                            <option value="" disabled selected>Select Condition</option>
-                            <option value="used">Used</option>
-                            <option value="new">New</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="sell-section">
-                    <a href="../ConfirmationSell/confirmationsell.html" class="sell-button">Sell the Game</a>
-                    <div class="checkout-box">
-                        <label for="agree-terms">I agree to the terms</label>
-                        <input type="checkbox" id="agree-terms">
-                    </div>
-                </div>
             </div>
+        </div>
+    </footer>
 
-        </main>
+</body>
 
-        <footer>
-            <div class="footer_container">
-                <div class="footer_item">
-                    <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
-                    <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
-                    <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
-                </div>
-                <div class="footer_item">
-                    Copyright &copy;
-                </div>
-                <div class="footer_item">
-                    <ul>
-                        <li><a href="../About/About.html"> About Us</a></li>
-                        <li><a href="#"> Contact us</a></li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
-
-    </body>
 </html>

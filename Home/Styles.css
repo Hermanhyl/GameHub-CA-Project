@@ -252,6 +252,7 @@ nav li a:hover {
         margin-bottom: 15px; 
         
     }
+
     
     .GameNews_container {
         background-color: black;
@@ -261,6 +262,27 @@ nav li a:hover {
         justify-content: center;
         padding-bottom: 10%;
     }
+
+    .loading {
+        background-color: #aaaaaa99;
+        border-radius: 4px;
+    }
+
+    @keyframes pulse {
+        
+    0%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+	}
+	
+	50% {
+        opacity: 0.5;
+        transform: scale(0.99);
+	}
+	}
+    
+
     .grid_container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
