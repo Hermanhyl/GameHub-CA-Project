@@ -21,21 +21,46 @@
 import { API_GAMES_URL } from "./constants.mjs";
 import { doFetch } from "./doFetch.mjs";
 
+let chosenGenre = '';
 
-export const makeGenreCard = (genreList) => {
-    let collectionItems = document.createElement('div');
-    collectionItems.id = "collectionItems";
-    collectionItems.classList = "collectionItems";
+const actionGenreButton = document.getElementById('genre-action');
+const adventureGenreButton = document.getElementById('genre-adventure');
+const horrorGenreButton = document.getElementById('genre-horror');
+const sportsGenreButton = document.getElementById('genre-sports');
 
-    let main = document.querySelector('main');
+actionGenreButton.addEventListener('click', () => {
+    chosenGenre = 'Action';
+    renderHomePage();
+});
+adventureGenreButton.addEventListener('click', () => {
+    chosenGenre = 'Adventure';
+    renderHomePage();
+});
+horrorGenreButton.addEventListener('click', () => {
+    chosenGenre = 'Horror';
+    renderHomePage();
+});
+sportsGenreButton.addEventListener('click', () => {
+    chosenGenre = 'Sports';
+    renderHomePage();
+});
 
-    main.appendChild(collectionItems);
-    let row = document.getElementById('collectionItems');
-    row.innerHTML = '';
-    genreList.forEach((game) => 
-        genreCardContent(game)
-    );
-}
+
+// export const makeGenreCard = (genreList) => {
+//     let collectionItems = document.createElement('div');
+//     collectionItems.id = "collectionItems";
+//     collectionItems.classList = "collectionItems";
+
+//     let main = document.querySelector('main');
+
+//     main.appendChild(collectionItems);
+//     let row = document.getElementById('collectionItems');
+//     row.innerHTML = '';
+
+//     genreList.forEach((game) => 
+//         genreCardContent(game)
+//     );
+// }
 
 // function createInfo() {
 //     const info = localStorage.getItem('info');
@@ -134,16 +159,32 @@ function generateGameHtml(game) {
     return gameWrapper;
 }
 
+// export function displayGames(games) {
+//     const gamesDisplayContainer = document.getElementById("games-display");
+//     games.forEach((game) => {
+//         const gameHtml = generateGameHtml(game);
+//         gamesDisplayContainer.appendChild(gameHtml);
+//     });
+// }
+
 export function displayGames(games) {
+    
     const gamesDisplayContainer = document.getElementById("games-display");
-    games.forEach((game) => {
+    gamesDisplayContainer.textContent = '';
+    games.filter((game) => {
+        if (game.genre === chosenGenre || chosenGenre === '') {
+            return true;
+        }
+    })
+    .forEach((game) => {
         const gameHtml = generateGameHtml(game);
         gamesDisplayContainer.appendChild(gameHtml);
     });
 }
 
+
 function showLoading() {
-    const showLoading = document.getElementById('loading')
+    const showLoading = document.getElementById('loading');
     showLoading.classList.add('active');
     showLoading.textContent = 'Loading...';
 }
@@ -158,13 +199,16 @@ function hideLoading() {
 //     console.log("Creating cart...");
 // }
 
+async function renderHomePage() {
+    const responseData = await doFetch(API_GAMES_URL);
+        const games = responseData.data;
+        displayGames(games);
+}
 
 async function main() {
     createCart(); 
+    await renderHomePage();
     try {
-        const responseData = await doFetch(API_GAMES_URL);
-        const games = responseData.data;
-        displayGames(games);
         showLoading();
     } catch (error) {
         console.error("Error fetching data:", error);
