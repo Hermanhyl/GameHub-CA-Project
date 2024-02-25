@@ -1,7 +1,6 @@
 
 
 const game = JSON.parse(localStorage.getItem('game'));
-console.log('game')
 
 function generateHtmlInfoGame(game) {
 
@@ -30,8 +29,6 @@ function generateHtmlInfoGame(game) {
 
     const gameReleaseDate = document.createElement('div');
     gameReleaseDate.textContent = 'Release Date: ' + game.released; 
-
-    console.log(game)
 
     displayGame.appendChild(gameWrapper);
     gameWrapper.append(gameImage, gameTitle, gameDescription, gamePrice, gameAgeRestriction, 
