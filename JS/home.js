@@ -20,8 +20,10 @@
 
 import { API_GAMES_URL } from "./constants.mjs";
 import { doFetch } from "./doFetch.mjs";
+import {AddGenreEventListenerButtons} from "./filter.mjs"
 
 let chosenGenre = '';
+
 
 // const actionGenreButton = document.getElementById('genre-action');
 // const adventureGenreButton = document.getElementById('genre-adventure');
@@ -169,7 +171,7 @@ function generateGameHtml(game) {
 
 export function displayGames(games) {
     const gamesDisplayContainer = document.getElementById("games-display");
-    
+    gamesDisplayContainer.innerHTML = '';
     games.forEach((game) => {
         const gameHtml = generateGameHtml(game);
         gamesDisplayContainer.appendChild(gameHtml);
@@ -200,10 +202,11 @@ function hideLoading() {
 // }
 
 async function main() {
-    createCart();
     const responseData = await doFetch(API_GAMES_URL);
     const games = responseData.data;
     displayGames(games);
+    AddGenreEventListenerButtons(games);
+    createCart();
     await renderHomePage();
     try {
         showLoading();
