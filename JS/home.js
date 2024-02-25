@@ -139,7 +139,7 @@ function generateGameHtml(game) {
 
     const gameInfoButton = document.createElement('a');
     gameInfoButton.textContent = 'View Info';
-    gameInfoButton.href = "../GamePage/Gameinfo.html";
+    gameInfoButton.href = "./GamePage/Gameinfo.html";
     gameInfoButton.classList = 'linkTOProduct';
     gameInfoButton.addEventListener('click', () => {
         localStorage.setItem('game', JSON.stringify(game));
