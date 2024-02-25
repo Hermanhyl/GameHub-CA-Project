@@ -50,9 +50,11 @@
 
 
                 </div> -->
-                <div id="cart-items-display" style="color: #ffffff;"></div>
 
-                <div class="cart-row">
+                <div id="cart-items-display" style="color: #ffffff;"></div>
+                <div id="combined-total" style="color: #ffffff;"></div>
+
+                <!-- <div class="cart-row">
                     <div class="cart-item">
                         <img src="../Images/game-info-image/ajusted_img.png" alt="Hell On Earth game">
                         <div class="transport-type">
@@ -83,42 +85,42 @@
                 <strong class="cart-total-title">Total</strong>
                 <span class="cart-total-price">$59.99</span>
             </div>
-        </div>
+        </div> -->
 
-        <section class="payment-container">
-            <div class="h1-box">
-                <h1>Insert payment info</h1>
-            </div>
-            <div class="payment-info-container">
-                <div class="payment-info-box">
-                    <form action="submit-payment.php" method="post">
-                        <label for="name" hidden="hidden">Name:</label>
-                        <input type="text" placeholder="Name" class="typebox" id="name" required>
+                <section class="payment-container">
+                    <div class="h1-box">
+                        <h1>Insert payment info</h1>
+                    </div>
+                    <div class="payment-info-container">
+                        <div class="payment-info-box">
+                            <form action="submit-payment.php" method="post">
+                                <label for="name" hidden="hidden">Name:</label>
+                                <input type="text" placeholder="Name" class="typebox" id="name" required>
 
-                        <label for="number" hidden="hidden">Card Number:</label>
-                        <input type="text" placeholder="Card Number" class="typebox" id="number" required>
+                                <label for="number" hidden="hidden">Card Number:</label>
+                                <input type="text" placeholder="Card Number" class="typebox" id="number" required>
 
-                        <div class="exp-cvc">
-                            <label for="month" hidden="hidden">Expiration Month:</label>
-                            <input type="text" placeholder="Month" class="typebox" id="month" required>
+                                <div class="exp-cvc">
+                                    <label for="month" hidden="hidden">Expiration Month:</label>
+                                    <input type="text" placeholder="Month" class="typebox" id="month" required>
 
-                            <label for="year" hidden="hidden">Expiration Year:</label>
-                            <input type="text" placeholder="Year" class="typebox" id="year" required>
+                                    <label for="year" hidden="hidden">Expiration Year:</label>
+                                    <input type="text" placeholder="Year" class="typebox" id="year" required>
 
-                            <label for="cvc" hidden="hidden">CVC:</label>
-                            <input type="text" placeholder="CVC" class="typebox" id="cvc" required>
+                                    <label for="cvc" hidden="hidden">CVC:</label>
+                                    <input type="text" placeholder="CVC" class="typebox" id="cvc" required>
+                                </div>
+
+                            </form>
                         </div>
+                    </div>
+                </section>
 
-                    </form>
-                </div>
-            </div>
-        </section>
-
-        <section class="pay-btn-container">
-            <div class="pay-btn-box">
-                <a href="../Checkoutsuccess/success.html">Pay</a>
-            </div>
-        </section>
+                <section class="pay-btn-container">
+                    <div class="pay-btn-box">
+                        <a href="../Checkoutsuccess/success.html">Pay</a>
+                    </div>
+                </section>
 
 
     </main>
