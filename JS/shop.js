@@ -1,6 +1,6 @@
-import { displayGames } from "../JS/home.js";
+// import { displayGames } from "../JS/home.js";
 
-displayGames();
+// displayGames();
 
 // Function to add click event listener to each genre option
 // const createAddEventListenerGenre = (games) => {
