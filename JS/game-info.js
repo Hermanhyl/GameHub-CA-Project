@@ -38,19 +38,19 @@ function generateHtmlInfoGame(game) {
 
 generateHtmlInfoGame(game)
 
-//const displayContainer = document.getElementById('display-game-info');
-//const gameHtml = generateHtmlInfoGame(game);
-//displayContainer.appendChild(gameHtml);
+// const displayContainer = document.getElementById('display-game-info');
+// const gameHtml = generateHtmlInfoGame(game);
+// displayContainer.appendChild(gameHtml);
 
-// function displayGameInfo() {
-//     const displayContainer = document.getElementById('display-game-info');
-//     const cart = JSON.parse(localStorage.getItem('game'));
+function displayGameInfo() {
+    const displayContainer = document.getElementById('display-game-info');
+    const cart = JSON.parse(localStorage.getItem('game'));
 
-//      cart.forEach(function (currentGame) {
-//          const itemHtml = generateHtmlInfoGame(currentGame);
-//          displayContainer.appendChild(itemHtml);
-//      });
-// }
+    // cart.forEach(function (currentGame) {
+    //     const itemHtml = generateHtmlInfoGame(currentGame);
+    //     displayContainer.appendChild(itemHtml);
+    // });
+}
 
 function main() {
     displayGameInfo();
