@@ -22,6 +22,21 @@ import { API_GAMES_URL } from "./constants.mjs";
 import { doFetch } from "./doFetch.mjs";
 
 
+export const makeGenreCard = (genreList) => {
+    let collectionItems = document.createElement('div');
+    collectionItems.id = "collectionItems";
+    collectionItems.classList = "collectionItems";
+
+    let main = document.querySelector('main');
+
+    main.appendChild(collectionItems);
+    let row = document.getElementById('collectionItems');
+    row.innerHTML = '';
+    genreList.forEach((game) => 
+        genreCardContent(game)
+    );
+}
+
 // function createInfo() {
 //     const info = localStorage.getItem('info');
 //     if (!info) {
@@ -47,19 +62,23 @@ import { doFetch } from "./doFetch.mjs";
 
 
 function createCart() {
-    const cart = localStorage.getItem('cart');
+    let cart = localStorage.getItem('cart');
     if (!cart) {
-        localStorage.setItem('cart', JSON.stringify([]));
+        cart = [];
+        localStorage.setItem('cart', JSON.stringify(cart));
     }
 }
 
-function addToCart(game) {
-    const cart = JSON.parse(localStorage.getItem('cart'));
-    const itemIndex = cart.findIndex(function (currentGame) {
-    if (game.id === currentGame.id) {
-        return true;
+export function addToCart(game) {
+    let cart = JSON.parse(localStorage.getItem('cart'));
+    if (!Array.isArray(cart)) {
+        cart = [];
     }
-    return false;
+    const itemIndex = cart.findIndex(function (currentGame) {
+        if (game.id === currentGame.id) {
+            return true;
+        }
+        return false;
     });
     if (itemIndex === -1) {
         cart.push({ ...game, quantity: 1 });
@@ -100,15 +119,6 @@ function generateGameHtml(game) {
     gameInfoButton.addEventListener('click', () => {
         localStorage.setItem('game', JSON.stringify(game));
     });
-    // const gameInfoButton = document.createElement('div');
-    // gameInfoButton.textContent = 'View Info';
-    // gameInfoButton.classList.add('game-info-button');
-    // gameInfoButton.addEventListener('click', () => {
-    //     window.location.href = '../GamePage/Gameinfo.html';
-    //     localStorage.setItem('gameItem', JSON.stringify(gameItem))
-    //     console.log(localStorage.setItem('gameItem', JSON.stringify(gameItem)));
-    //     //console.log(gameInfoButton)
-    // }); 
 
     const gameBuyButton = document.createElement('button');
     gameBuyButton.textContent = 'Add To Cart';
@@ -125,19 +135,43 @@ function generateGameHtml(game) {
 }
 
 export function displayGames(games) {
-    const gamesDisplayContainer = document.getElementById('games-display');
-    console.log(games);
+    const gamesDisplayContainer = document.getElementById("games-display");
     games.forEach((game) => {
         const gameHtml = generateGameHtml(game);
         gamesDisplayContainer.appendChild(gameHtml);
     });
 }
 
+function showLoading() {
+    const showLoading = document.getElementById('loading')
+    showLoading.classList.add('active');
+    showLoading.textContent = 'Loading...';
+}
+
+function hideLoading() {
+    const hideLoading = document.getElementById('loading');
+    hideLoading.classList.remove('active');
+}
+
+// Mock functions for demonstration purposes
+// function createCart() {
+//     console.log("Creating cart...");
+// }
+
+
 async function main() {
     createCart(); 
-    const responseData = await doFetch(API_GAMES_URL);
-    const games = responseData.data;
-    displayGames(games);
+    try {
+        const responseData = await doFetch(API_GAMES_URL);
+        const games = responseData.data;
+        displayGames(games);
+        showLoading();
+    } catch (error) {
+        console.error("Error fetching data:", error);
+    } finally {
+        // Automatically hide the loading spinner after two seconds
+        setTimeout(hideLoading, 2000);
+    }
 }
 
 main();
