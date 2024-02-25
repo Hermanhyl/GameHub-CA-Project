@@ -23,27 +23,27 @@ import { doFetch } from "./doFetch.mjs";
 
 let chosenGenre = '';
 
-const actionGenreButton = document.getElementById('genre-action');
-const adventureGenreButton = document.getElementById('genre-adventure');
-const horrorGenreButton = document.getElementById('genre-horror');
-const sportsGenreButton = document.getElementById('genre-sports');
+// const actionGenreButton = document.getElementById('genre-action');
+// const adventureGenreButton = document.getElementById('genre-adventure');
+// const horrorGenreButton = document.getElementById('genre-horror');
+// const sportsGenreButton = document.getElementById('genre-sports');
 
-actionGenreButton.addEventListener('click', () => {
-    chosenGenre = 'Action';
-    renderHomePage();
-});
-adventureGenreButton.addEventListener('click', () => {
-    chosenGenre = 'Adventure';
-    renderHomePage();
-});
-horrorGenreButton.addEventListener('click', () => {
-    chosenGenre = 'Horror';
-    renderHomePage();
-});
-sportsGenreButton.addEventListener('click', () => {
-    chosenGenre = 'Sports';
-    renderHomePage();
-});
+// actionGenreButton.addEventListener('click', () => {
+//     chosenGenre = 'Action';
+//     renderHomePage();
+// });
+// adventureGenreButton.addEventListener('click', () => {
+//     chosenGenre = 'Adventure';
+//     renderHomePage();
+// });
+// horrorGenreButton.addEventListener('click', () => {
+//     chosenGenre = 'Horror';
+//     renderHomePage();
+// });
+// sportsGenreButton.addEventListener('click', () => {
+//     chosenGenre = 'Sports';
+//     renderHomePage();
+// });
 
 
 // export const makeGenreCard = (genreList) => {
@@ -168,15 +168,9 @@ function generateGameHtml(game) {
 // }
 
 export function displayGames(games) {
-    
     const gamesDisplayContainer = document.getElementById("games-display");
-    gamesDisplayContainer.textContent = '';
-    games.filter((game) => {
-        if (game.genre === chosenGenre || chosenGenre === '') {
-            return true;
-        }
-    })
-    .forEach((game) => {
+    
+    games.forEach((game) => {
         const gameHtml = generateGameHtml(game);
         gamesDisplayContainer.appendChild(gameHtml);
     });
@@ -199,14 +193,17 @@ function hideLoading() {
 //     console.log("Creating cart...");
 // }
 
-async function renderHomePage() {
-    const responseData = await doFetch(API_GAMES_URL);
-        const games = responseData.data;
-        displayGames(games);
-}
+// async function renderHomePage() {
+    
+    
+        
+// }
 
 async function main() {
-    createCart(); 
+    createCart();
+    const responseData = await doFetch(API_GAMES_URL);
+    const games = responseData.data;
+    displayGames(games);
     await renderHomePage();
     try {
         showLoading();
