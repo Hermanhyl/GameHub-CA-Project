@@ -1,4 +1,4 @@
-# Your project title
+# Game Hub compulsory 
 
 ![image](![game hub](https://github.com/Hermanhyl/GameHub-CA-Project/assets/60390638/09dfcefe-ca07-4449-8d60-8259211df13b)
 )
