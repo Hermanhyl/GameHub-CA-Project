@@ -1,6 +1,7 @@
 # Your project title
 
-![image](file:///C:/Users/GBT%20B560M_V3/Pictures/game%20hub.png)
+![image](![game hub](https://github.com/Hermanhyl/GameHub-CA-Project/assets/60390638/09dfcefe-ca07-4449-8d60-8259211df13b)
+)
 
 ## Description
 
