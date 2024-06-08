@@ -28,7 +28,7 @@ You can list a the tech stack that you've used over here
 
 [My LinkedIn page](https://www.linkedin.com/in/herman-hylland/)
 
-## Lin to website: 
+## Link to website: 
 
 (https://hermanhyl.github.io/GameHub-CA-Project/)
 
